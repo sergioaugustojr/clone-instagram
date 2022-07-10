@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 90vh;
+    max-width: 992px;
+    margin: auto;
+    min-width: 320px;
+    padding: 10px;
+}
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 700px;
+    min-height: 540px;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    width: 45%;
+    height: 85%;
+    min-height: 560px;
+    max-width: 315px;
+    background-color: #fafafa;
+    position: relative;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    align-items: center;
+    width: 100%;
+    height: 68%;
+    min-height: 350px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+}
+.login-img, .login-usuario, .login-senha, .login-botao, .barra-ou, .entrar-com-facebook, .Esqueceu-a-senha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login-img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.login-usuario input, .login-senha input {
+    background-color: #fafafa;
+    width: 75%;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 5px;
+}
+.login-botao button {
+    width: 75%;
+    height: 30px;
+    font-size: 14px;
+    background-color: #0095f6;
+    opacity: 1;
+    color: white;
+    border-radius: 3px;
+    
+}
+.perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 85%;
+    max-width: 350px;
+    min-height: 560px;
+}
+.perfil img {
+    height: 100%;
+}
+.barra-reta {
+    background-color: #dbdbdb;
+    content: "";
+    height: 1px;
+    width: 33%;
+}
+.ou {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #dbdbdb;
+}
+.facebook-icon-small, .facebook-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #dbdbdb;
+}
+.cadastro a{
+    padding-left: 5px;
+}
+.aplicativos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.obtenha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.separa-apps {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.app-store, .play-store {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.play-store img, .app-store img {
+    width: 85%;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* mobile */
+@media(max-width: 992px)
+{
+    .flex-container {
+        flex-direction: column;
+    }
+    .perfil, .info{
+        visibility: hidden;
+        display: none;
+        width: 0%;
+    }
+    .third, .second {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
